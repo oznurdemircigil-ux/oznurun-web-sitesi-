@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hobilerim ve Çalışma Alanlarım</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Hakkımda</a></li>
+            <li><a href="hobilerim.html" class="active">Hobilerim</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <div class="container slide-up">
+        <h2>Hobilerim</h2>
+        <p>İşim gereği araziyle iç içe olmamın yanı sıra, boş zamanlarımda <strong>doğa gezileri</strong> yapmaktan ve yeni yerler keşfetmekten büyük mutluluk duyuyorum.</p>
+        
+        <hr>
+        <h3>İlgi Duyduğum ve Çalıştığım Şehirler</h3>
+        <div id="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([38.5, 38.0], 6);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        // İstediğiniz şehirlerin listesi
+        var locations = [
+            { name: "Adıyaman (Görev Yerim)", coords: [37.7648, 38.2786] },
+            { name: "Van", coords: [38.4891, 43.4089] },
+            { name: "Hakkari", coords: [37.5744, 43.7408] },
+            { name: "Mersin", coords: [36.8121, 34.6415] },
+            { name: "Konya (Eğitim)", coords: [37.8714, 32.4921] },
+            { name: "Nevşehir", coords: [38.6244, 34.7144] }
+        ];
+
+        locations.forEach(function(loc) {
+            L.marker(loc.coords).addTo(map).bindPopup(loc.name);
+        });
+    </script>
+</body>
+</html>

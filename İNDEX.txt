@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öznur Şahin DEMİRCİGİL | Jeoloji Mühendisi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Hakkımda</a></li>
+            <li><a href="hobilerim.html">Hobilerim</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <div class="container fade-in">
+        <header>
+            <h1>Öznur Şahin DEMİRCİGİL</h1>
+            <p class="subtitle">Jeoloji Mühendisi & Harita Kadastro Teknikeri</p>
+        </header>
+        <hr>
+        <section class="content">
+            <h2>Hakkımda</h2>
+            <p>Merhaba, ben <strong>Öznur Şahin DEMİRCİGİL</strong>. Selçuk Üniversitesi Harita Kadastro Teknikerliği bölümünden mezun olduktan sonra eğitimimi Jeoloji Mühendisliği ile taçlandırdım.</p>
+            <p>Şu anda <strong>Adıyaman Kentsel Dönüşüm Müdürlüğü</strong> bünyesinde Jeoloji Mühendisi olarak görev yapmaktayım. Mesleki hayatımda heyelan ve zemin etütleri üzerine yoğunlaşarak; afet sonrası yer seçimi, jeolojik-jeoteknik raporlama ve kurumumuzun sorumluluğundaki teknik süreçleri yürütüyorum.</p>
+            <p>Teknolojiye ve iş süreçlerini kolaylaştıran her türlü yeniliğe büyük ilgi duyuyorum.</p>
+        </section>
+    </div>
+</body>
+</html>
