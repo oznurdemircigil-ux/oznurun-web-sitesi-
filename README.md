@@ -1,2 +1,2 @@
-# oznurun-web-sitesi-
-KİŞİSEL WEB SİTESİ
+# Kişisel Web Sayfası
+
